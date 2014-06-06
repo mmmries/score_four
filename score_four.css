@@ -1,0 +1,36 @@
+#board {
+  /*
+  min-width: 400px;
+  max-width: 1200px;
+  min-height: 300px;
+  max-height: 900px;
+  */
+  width: 580px;
+  margin: auto;
+  background-color: #3333FF;
+}
+
+tr {
+  height: 80px;
+  clear: both;
+}
+
+td {
+  width: 80px;
+}
+
+.hole {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.hole.red {
+  background-color: red;
+}
+
+.hole.black {
+  background-color: black;
+}
