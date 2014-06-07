@@ -7,8 +7,8 @@
   ["white" "white" "white" "white" "white" "white" "white"]
   ["white" "white" "white" "white" "white" "white" "white"]
   ["white" "white" "white" "white" "white" "white" "white"]
-  ["white" "white" "white" "white" "white" "white" "white"]
-  ["white" "white" "white" "white" "white" "red"   "red"  ]]))
+  ["white" "white" "white" "white" "white" "white" "red"  ]
+  ["white" "white" "white" "white" "white" "black" "red"  ]]))
 
 (om/root
   b/board
