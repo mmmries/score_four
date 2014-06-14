@@ -3,12 +3,17 @@
             [om.dom :as dom :include-macros true]
             [cljs.core.async :refer [put! chan <!]]))
 
+(def color (cycle ["red" "black"]))
+
+(defn play [cell]
+  (om/transact! cell [0] (fn [state] "red")))
+
 (defn cell [cell owner]
   (reify
   om/IRender
   (render [this]
     (dom/td nil
-      (dom/div #js {:className (str "hole " cell)} nil)))))
+      (dom/div #js {:className (str "hole " (first cell)) :onClick (fn [e] (play cell))} nil)))))
 
 (defn row [row owner]
   (reify

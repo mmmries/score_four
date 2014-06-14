@@ -3,12 +3,12 @@
             [score_four.board :as b]))
 
 (def app-state (atom [
-  ["white" "white" "white" "white" "white" "white" "white"]
-  ["white" "white" "white" "white" "white" "white" "white"]
-  ["white" "white" "white" "white" "white" "white" "white"]
-  ["white" "white" "white" "white" "white" "white" "white"]
-  ["white" "white" "white" "white" "white" "white" "red"  ]
-  ["white" "white" "white" "white" "white" "black" "red"  ]]))
+  [["white"] ["white"] ["white"] ["white"] ["white"] ["white"] ["white"]]
+  [["white"] ["white"] ["white"] ["white"] ["white"] ["white"] ["white"]]
+  [["white"] ["white"] ["white"] ["white"] ["white"] ["white"] ["white"]]
+  [["white"] ["white"] ["white"] ["white"] ["white"] ["white"] ["white"]]
+  [["white"] ["white"] ["white"] ["white"] ["white"] ["white"] ["white"]]
+  [["white"] ["white"] ["white"] ["white"] ["white"] ["white"] ["white"]]]))
 
 (om/root
   b/board
