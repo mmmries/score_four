@@ -13,7 +13,10 @@
   om/IRender
   (render [this]
     (dom/td nil
-      (dom/div #js {:className (str "hole " (first cell)) :onClick (fn [e] (play cell))} nil)))))
+      (dom/div #js {
+        :className (str "hole " (first cell))
+        :onClick (fn [e] (play cell))
+      } nil)))))
 
 (defn row [row owner]
   (reify
