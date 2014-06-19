@@ -8,3 +8,6 @@
 
 (deftest another
   (is (= 1 2)))
+
+(deftest seriously?
+  (is (= 12 "WAT")))

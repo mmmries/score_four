@@ -22,12 +22,13 @@
                 :optimizations :none
                 :source-map true}
              }
-             {:id "unit-tests"
+             {:id "test"
               :source-paths ["src" "test"]
               :compiler {
                 :output-to "score_four_test.js"
                 :optimizations :whitespace
                 :pretty-print true}
+              :notify-command ["phantomjs" "test_runner.js" "score_four_test.js"]
              }
             ]
 
