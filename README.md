@@ -7,9 +7,7 @@ A mini in-browser game of [Connect Four](http://en.wikipedia.org/wiki/Connect_Fo
 Yes, I seriously built the simplest game I could think of. This is mostly a place for me to play with the ideas from [om](https://github.com/swannodette/om) and get my feet wet with [ClojureScript](https://github.com/clojure/clojurescript).
 
 # Development
-Running tests: $ lein cljsbuild auto test
-
-Build: $ lein cljsbuild auto dev
+Running tests: $ lein cljsbuild auto test dev
 
 Try it: open index.html in a browser
 
