@@ -8,3 +8,4 @@ pom.xml
 .lein-repl-history
 .lein-plugins/
 .lein*
+score_four_test.js
