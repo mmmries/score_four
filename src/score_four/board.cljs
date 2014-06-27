@@ -1,9 +1,8 @@
 (ns score_four.board
   (:require [om.core :as om :include-macros true]
             [om.dom :as dom :include-macros true]
+            [score_four.game :as g]
             [cljs.core.async :refer [put! chan <!]]))
-
-(def color (cycle ["red" "black"]))
 
 (defn play [cell]
   (om/transact! cell [0] (fn [state] "red")))

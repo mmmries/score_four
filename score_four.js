@@ -10,5 +10,5 @@ goog.addDependency("../cljs/core/async/impl/timers.js", ['cljs.core.async.impl.t
 goog.addDependency("../cljs/core/async.js", ['cljs.core.async'], ['cljs.core.async.impl.ioc_helpers', 'cljs.core.async.impl.buffers', 'cljs.core', 'cljs.core.async.impl.channels', 'cljs.core.async.impl.dispatch', 'cljs.core.async.impl.protocols', 'cljs.core.async.impl.timers']);
 goog.addDependency("../om/dom.js", ['om.dom'], ['cljs.core']);
 goog.addDependency("../om/core.js", ['om.core'], ['cljs.core', 'om.dom', 'goog.ui.IdGenerator']);
-goog.addDependency("../score_four/board.js", ['score_four.board'], ['cljs.core', 'om.core', 'om.dom', 'cljs.core.async']);
-goog.addDependency("../score_four/core.js", ['score_four.core'], ['cljs.core', 'om.core', 'score_four.board']);
+goog.addDependency("../score_four/board.js", ['score_four.board'], ['score_four.game', 'cljs.core', 'om.core', 'om.dom', 'cljs.core.async']);
+goog.addDependency("../score_four/core.js", ['score_four.core'], ['score_four.game', 'cljs.core', 'om.core', 'score_four.board']);
